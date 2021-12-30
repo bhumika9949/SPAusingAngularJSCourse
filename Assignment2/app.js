@@ -30,7 +30,7 @@ function ShoppingListCheckOffService() {
   var service = this;
 
   //List of Items
-  var tobuy = [{ name: "cookies", quantity: 10 }, { name: "chips", quantity: 12 }, { name: "candies", quantity: 20 }];
+  var tobuy = [{ name: "cookies", quantity: 10 }, { name: "sugar", quantity: 2 }, { name: "sandwich", quantity: 10 }, { name: "chips", quantity: 12 }, { name: "candies", quantity: 20 }];
   var bought = [];
 
   //CheckOff function
