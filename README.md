@@ -10,3 +10,6 @@ SPAusingAngularJSCourse
 
 ## Assignment 2:
 [Assignment2 Link](https://bhumika9949.github.io/SPAusingAngularJSCourse/Assignment2/index.html).
+
+## Assignment 3:
+[Assignment2 Link](https://bhumika9949.github.io/SPAusingAngularJSCourse/Assignment3/assignment3-starter-code/index.html).
