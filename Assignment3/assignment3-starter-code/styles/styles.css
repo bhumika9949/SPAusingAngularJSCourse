@@ -50,3 +50,12 @@ input[type="text"] {
     transform: rotate(360deg);
   }
 }
+.result {
+  float: left;
+  margin: 10px;
+  border: 1px solid grey;
+}
+.container {
+  float: left;
+  padding: 10px;
+}
