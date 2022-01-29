@@ -1,4 +1,4 @@
-SPAusingAngularJSCourse
+#SPAusingAngularJSCourse
 =======
 **Assignment Repo for Course- Single-page-web-apps-with-angularjs**
 
@@ -13,6 +13,9 @@ SPAusingAngularJSCourse
 
 ## Assignment 3:
 [Assignment3 Link](https://bhumika9949.github.io/SPAusingAngularJSCourse/Assignment3/assignment3-starter-code/index.html).
+
+## Assignment 4:
+[Assignment4 Link](https://bhumika9949.github.io/SPAusingAngularJSCourse/Assignment4//index.html).
 
 ##Browser-sync command
 Project Folder> browser-sync start --server --directory --files "**/*"
