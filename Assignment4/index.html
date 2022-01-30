@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.30/angular-ui-router.min.js" integrity="sha512-HdDqpFK+5KwK5gZTuViiNt6aw/dBc3d0pUArax73z0fYN8UXiSozGNTo3MFx4pwbBPldf5gaMUq/EqposBQyWQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Sunshine Restaurant</title>
+  </head>
+  <body ng-app="MenuApp">
+    <h1 class="text-center p-4">Welcome to our restaurant!</h1>
+
+    <ui-view></ui-view>
+
+    <!-- Modules -->
+    <script src="modules/menuapp.module.js" charset="utf-8"></script>
+    <script src="modules/data.module.js" charset="utf-8"></script>
+    <!-- Routes -->
+    <script src="routes.js" charset="utf-8"></script>
+    <!-- Services -->
+    <script src="menudata.service.js" charset="utf-8"></script>
+    <!-- Components -->
+    <script src="components/categories.component.js" charset="utf-8"></script>
+    <script src="components/items.component.js" charset="utf-8"></script>
+    <script src="controllers/categories.ctrl.js" charset="utf-8"></script>
+    <script src="controllers/items.ctrl.js" charset="utf-8"></script>
+
+  </body>
+</html>
