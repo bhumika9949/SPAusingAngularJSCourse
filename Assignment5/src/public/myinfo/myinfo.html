@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="menu-item-tile col-md-6">
+    <div class="row" ng-if="myinfoCtrl.show" >
+      <div class="col-sm-5">
+        <div class="menu-item-photo">
+          <div>{{myinfoCtrl.user.mydish.short_name}}</div>
+          <img class="img-responsive" width="250" height="150" ng-src="{{myinfoCtrl.basePath}}/images/{{myinfoCtrl.user.mydish.short_name}}.jpg" alt="{{myinfoCtrl.user.mydish.name}}">
+        </div>
+      </div>
+      <div class="menu-item-description col-sm-7">
+        <h3>Favorite dish: </h3>
+        <h3 class="menu-item-title">{{myinfoCtrl.user.mydish.name}}</h3>
+        <p class="menu-item-details">{{myinfoCtrl.user.mydish.description}}</p>
+        <h5>Name: {{myinfoCtrl.user.firstname + ' '+ myinfoCtrl.user.lastname}} ({{myinfoCtrl.user.email}})</h5>
+        <h5>Contact: {{myinfoCtrl.user.phone}}</h5>
+      </div>
+    </div>
+    <hr class="visible-xs">
+    <div ng-if="!myinfoCtrl.show">
+      Not Signed Up Yet. <a ui-sref="public.signup">Sign up Now!</a>
+    </div>
+  </div>
+
+</div>

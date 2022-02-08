@@ -1,0 +1,62 @@
+<style media="screen">
+  /* Sign Up form */
+  .ng-touched.ng-valid {
+  border: 2px green solid;
+  }
+
+  .ng-touched.ng-invalid {
+    border: 2px red solid;
+  }
+
+  .btn-yellow {
+    color: #61122f;
+    background-color: #f6b319;
+  }
+
+  /* End Sign up form */
+</style>
+<div class="container">
+  <fieldset>
+    <legend style="color: #fff;">Sign Up Form</legend>
+    <form name="form" class="form" novalidate>
+      <div class="mb-3">
+          <span class="form-label">*Firstname:</span>
+          <input class="form-control" type="text" name="firstname" required ng-model="formCtrl.firstname" placeholder="Enter firstname">
+          <span class="badge" ng-if="form.firstname.$error.required && form.firstname.$touched">
+            Firstname required
+          </span>
+      </div>
+      <div class="mb-3">
+        <span class="form-label">*Lastname:</span>
+        <input class="form-control" type="text" name="lastname" required ng-model="formCtrl.lastname" placeholder="Enter lastname">
+        <span class="badge" ng-if="form.lastname.$error.required && form.lastname.$touched">
+          Lastname required
+        </span>
+      </div>
+      <div class="mb-3">
+        <span class="form-label">*E-mail:</span>
+        <input class="form-control" type="email" name="email" required ng-model="formCtrl.email" placeholder="Enter e-mail">
+        <span class="badge" ng-if="form.email.$error.required && form.email.$touched">
+          Email required
+        </span>
+      </div>
+      <div class="mb-3">
+        <span class="form-label">*Contact:</span>
+          <input class="form-control" type="tel" name="phone" required maxlength="10" minlength="10" ng-model="formCtrl.phone" placeholder="Enter contact number">
+          <span class="badge" ng-if="(form.phone.$error.minlength || form.phone.$error.required) && form.phone.$touched">
+            10-digit Contact number required.
+          </span>
+      </div>
+      <div class="mb-3">
+        <span class="form-label">*Menu Number:</span>
+        <input class="form-control" type="text" name="mydish" required ng-model="formCtrl.mydish" placeholder="Enter your favorite dish" style="width: 50%;">
+        <span ng-if="formCtrl.falseMsg">{{formCtrl.falseMsg}}</span>
+        <span class="badge" ng-if="form.mydish.$error.required && form.mydish.$touched">
+          Dish required.
+        </span>
+      </div>
+      <button type="submit" name="submitBtn" class="btn btn-yellow" ng-disabled="form.$invalid || formCtrl.isUserRegistered()" ng-click="formCtrl.submitForm();">Submit</button>
+    </form>
+    <span ng-if="formCtrl.trueMsg">{{formCtrl.trueMsg}}</span>
+  </fieldset>
+</div>

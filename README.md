@@ -17,5 +17,8 @@ SPA using AngularJS Course
 ## Assignment 4:
 [Assignment4 Link](https://bhumika9949.github.io/SPAusingAngularJSCourse/Assignment4/index.html).
 
+## Assignment 5:
+[Assignment4 Link](https://bhumika9949.github.io/SPAusingAngularJSCourse/Assignment5/index.html).
+
 ##Browser-sync command
 Project Folder> browser-sync start --server --directory --files "**/*"
